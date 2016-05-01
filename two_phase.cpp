@@ -7,7 +7,8 @@ using namespace std;
 int counter=0;
 
 int negative(float A[20][20],int row,int col)
-{   int neg=0,loc=-1;
+{   double neg=0;
+    int loc=-1;
     for(int i=0;i<col;i++)
     {
         if(A[row-1][i]<=neg)
@@ -22,7 +23,7 @@ int negative(float A[20][20],int row,int col)
 int minratio(float A[20][20],int row,int col,int neg)
 {
     int i,j,loc=-1;
-    int r,min=20000;
+    double r,min=20000;
     for(i=0;i<row;i++)
     {
         if(A[i][neg]>0)
@@ -76,7 +77,7 @@ void Swapn(int &a,int &b)
      b=temp;
 }
 
-void delcol(float A[][20],int row,int col,int k)
+delcol void(float A[][20],int row,int col,int k)
 {
      int i,j;
      for(j=k;j<col-1;j++)

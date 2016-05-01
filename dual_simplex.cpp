@@ -10,7 +10,7 @@ int negative(float A[20][20],int row,int col)
 {   int neg=0,loc=-1;
     for(int i=0;i<row;i++)
     {
-        if(A[i][col-1]<=neg)
+        if(A[i][col-1]<neg)
         {
             neg=A[i][col-1];
             loc=i;
